@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mend VC Tests" parallel="classes" thread-count="2">
+    <test name="VersionControlTest">
+        <parameter name="vc" value="GITHUB" />
+        <classes>
+            <class name="org.example.VersionControlTest" />
+        </classes>
+    </test>
+    <test name="BranchesTest">
+        <parameter name="vc" value="GITHUB" />
+        <classes>
+            <class name="org.example.BranchesTest" />
+        </classes>
+    </test>
+</suite>
